@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: red;
+}
+
+#contenedor {
+    background-color: #fff;
+    width: 98%;
+    height: 98%;
+    margin: 20px auto;
+
+    .encabezado {
+
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #7A0070;
+        border-bottom: 2px solid #000000;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        ;
+        margin-bottom: 10px;
+    }
+
+    .logo-per {
+
+        width: 100px;
+        display: flex;
+    }
+
+    .encabezado img {
+        width: 200px;
+        height: 200px;
+        margin-right: 25 px;
+    }
+
+    h1 {
+        color: red;
+        font-size: 50px;
+        font-style: italic;
+    }
+
+    nav {
+        width: 100%;
+        ;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .barra-de-menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .barra-de-menu {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        ;
+
+        margin: 0;
+        width: auto;
+
+    }
+
+    .barra-de-menu li:hover .sub-menu {
+        visibility: visible;
+
+        opacity: 1;
+    }
+
+    .sub-menu {
+        width: 200px;
+        position: absolute;
+        visibility: hidden;
+        opacity: 1;
+        transition: opacity 0.5s;
+        font-size: 12pt;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-menu li a {
+        background-color: white;
+        border: 2px solid red;
+        color: black;
+        display: block;
+        padding: 5px;
+        margin-left: -22px;
+    }
+
+    .sub-menu li a:hover {
+        background-color: red;
+        color: white;
+        border: 2px solid red;
+    }
+
+    .barra-de-menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        border-radius: 15px;
+    }
+
+    .barra-de-menu li {
+        margin: 0;
+    }
+
+    .contacto-borde {
+        border: 4px solid red;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .inicio-borde {
+        border: 4px solid red;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .inicio-borde,
+    .contacto-borde {
+        text-decoration: none;
+        padding: 15px 25px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        display: block;
+        text-align: center;
+        transition: 0.5s ease;
+    }
+
+    .borde-cuadrado {
+        text-decoration: none;
+        padding: 15px 25px;
+        border: 4px solid #e74c3c;
+
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        display: block;
+        text-align: center;
+        transition: 0.5s ease;
+    }
+
+    .barra-de-menur a.active {
+        background-color: red;
+        color: white;
+    }
+
+    .barra-de-menu ul :hover {
+        background-color: red;
+        color: white;
+    }
+
+    .menu-bar a:not(.active) {
+        background-color: white;
+    }
+
+    main {
+        display: flex;
+        margin: auto;
+    }
+
+    .pie-de-pagina {
+
+
+        width: 100%;
+        height: 25%;
+        border-top: 2px solid black;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: auto;
+        padding: 25px;
+        background-color: #7A0070;
+    }
+
+    .footer-section {
+
+        min-width: 20px;
+        margin-right: 50px;
+
+    }
+
+    .footer-section h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: white;
+    }
+
+    .footer-section p {
+        margin-bottom: 5px;
+        color: white;
+    }
+
+    .footer-section a {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+
+    .iconos-de-pago,
+    .redes-sociales-iconos {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .redes-sociales-iconos img {
+        cursor: pointer;
+    }
+
+    .redes-sociales-iconos img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.bloque-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    ;
+}
+
+.caja-superior {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    background-image: url(../imagenes/fondo-restaurante\ principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Bienvenidos {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+    padding-top: 50px;
+    flex-direction: column;
+    width: 45%;
+    color: #7A0070;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.img-platostop {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    gap: 20px
+}
+
+.img-platostop a img {
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+img .transformacion {
+
+    width: 137px;
+    height: 180px;
+    transition: all 1000ms ease-in ease-out
+}
+
+img.transformacion:hover {
+    transform: scale(1.5, 1.5);
+}
+
+
+.caja-inferior {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../imagenes/fondo-naranja.jpg);
+    color: white;
+
+
+}
+
+.caja-interior2 {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.section1 {
+    display: block;
+    ;
+    justify-content: center;
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+    align-items: flex-start;
+}
+
+.regiones-peru ul li span:hover {
+    text-decoration: underline;
+}
+
+h6 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.regiones-peru ul li {
+    list-style: none;
+}
+
+.regiones-peru ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section2 {
+    display: block;
+    ;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    padding: 50px;
+    align-items: flex-start;
+
+
+}
+
+.platos-img {
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow {
+    display: flex;
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+@keyframes slideshow {
+
+    0%,
+    33.33% {
+        transform: translateX(0);
+    }
+
+    33.33%,
+    66.66% {
+        transform: translateX(-100%);
+    }
+
+    66.66%,
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
+.slides {
+    animation: slideshow 11s infinite;
+}

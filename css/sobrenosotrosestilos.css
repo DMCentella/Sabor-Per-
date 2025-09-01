@@ -1,0 +1,38 @@
+.main-sobrenosotros {
+    width: 100%;
+    background-color:gold;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre1 {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+}
+
+.bloque1 {
+    display: flex;
+    justify-content: center;
+    padding: 100px 150px;
+    text-align: justify; flex-direction: column;
+}
+
+.bloque2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+    padding-bottom: 150px;
+}
+
+.bloque2 img {
+    width: 25%;border-radius: 15px;
+}
+.bloque2 img:hover {transform: scale(1.5, 1.5);}

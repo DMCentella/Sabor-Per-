@@ -1,0 +1,47 @@
+main {
+    justify-content: center;
+    padding: 100px;
+    background:  url(../imagenes/restaurante\ fondo\ reserva.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario {
+    width: 100%;
+    background: linear-gradient(135deg, #d4af37, #ffd700, #b8860b, #d4af37);;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.caja-texto {
+    width: 40%;
+    justify-content: center;height:30px;
+}
+.formulario h2 {text-align: center;}
+.grupo-opciones {
+    margin-bottom: 10px;
+}
+.formulario-top input {display: flex; flex-direction: column;width: 100%;;}
+.opciones {
+    display: flex;
+    ; justify-content: space-between;
+    margin: 15px;
+}
+
+.Delivery,
+.Reservación {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 25%;
+    flex: 1;
+}
+
+.Delivery input, .Reservación input {
+     display: flex; justify-content: space-between;width: 50%;
+}
+.enviar input {background-color: #7A0070;color: white; width: 150px;}
